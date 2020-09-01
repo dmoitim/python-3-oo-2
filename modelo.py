@@ -41,14 +41,37 @@ class Serie(Programa):
         return f"{self._nome} ({self.ano}) - Temporadas: {self.temporadas} - Likes: {self._likes}"
 
 
+class Playlist(list):
+    def __init__(self, nome, programas):
+        self.nome = nome
+        super().__init__(programas)
+
+
 vingadores = Filme('vingadores: guerra infinita', 2018, 160)
-vingadores.dar_like()
-
 vikings = Serie('vikings', 2013, 6)
+tmep = Filme('todo mundo em pânico', 2009, 100)
+demolidor = Serie('demolidor', 2016, 2)
+
+vingadores.dar_like()
+vingadores.dar_like()
+vingadores.dar_like()
+vingadores.dar_like()
+vingadores.dar_like()
+vingadores.dar_like()
+vingadores.dar_like()
+tmep.dar_like()
+tmep.dar_like()
+tmep.dar_like()
+demolidor.dar_like()
 vikings.dar_like()
 vikings.dar_like()
 
-filmes_e_series = [vingadores, vikings]
+filmes_e_series = [vingadores, vikings, demolidor, tmep]
+playlist_fim_de_semana = Playlist('fim de semana', filmes_e_series)
 
-for programa in filmes_e_series:
+print(f"Tamanho da playlist: {len(playlist_fim_de_semana)}")
+
+for programa in playlist_fim_de_semana:
     print(programa)
+
+print(f"Demolidor está na lista? {demolidor in playlist_fim_de_semana}")
