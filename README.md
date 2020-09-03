@@ -1,6 +1,6 @@
 # Curso de Python 3: Introdução a Orientação a objetos
 
-Códigos desenvolvidos no Python 3: Avançando na orientação a objetos, ministrado pelo instrutor Luan Marques na plataforma Alura. 
+Códigos desenvolvidos no Curso de Python 3: Avançando na orientação a objetos, ministrado pelo instrutor Luan Marques na plataforma Alura. 
 
 Link do curso: https://cursos.alura.com.br/course/python-3-avancando-orientacao-objetos
 
